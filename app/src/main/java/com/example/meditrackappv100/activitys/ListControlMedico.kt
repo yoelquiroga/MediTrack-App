@@ -34,7 +34,6 @@ class ListControlMedico : AppCompatActivity() {
 
         rvControles.layoutManager = LinearLayoutManager(this)
         controlMedicoAdapter = ControlMedicoAdapter(emptyList()) { control ->
-            // Al hacer clic en un ítem, abrir el detalle
             val intent = Intent(this, DetalleControl::class.java)
             intent.putExtra("id_con_med", control.id_con_med)
             startActivity(intent)

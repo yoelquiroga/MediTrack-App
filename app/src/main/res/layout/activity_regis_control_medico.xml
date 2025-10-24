@@ -8,8 +8,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".activitys.RegisControlMedico">
-
-
+    
     <LinearLayout
         android:id="@+id/llayEncabezado"
         android:layout_width="0dp"
@@ -21,7 +20,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-
         <ImageView
             android:id="@+id/ivAtras"
             android:layout_width="24dp"
@@ -29,20 +27,18 @@
             android:src="@drawable/ic_atras"
             android:contentDescription="Volver" />
 
-
         <TextView
             android:id="@+id/tvTitulo"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="Control Médico"
-            android:paddingEnd="20dp"
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/black"/>
 
     </LinearLayout>
-
 
     <View
         android:id="@+id/vLinea"
@@ -52,7 +48,6 @@
         app:layout_constraintTop_toBottomOf="@id/llayEncabezado"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 
     <ScrollView
         android:layout_width="0dp"
@@ -67,7 +62,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilNombresApellidos"
@@ -87,7 +81,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilEdad"
                 android:layout_width="match_parent"
@@ -105,7 +98,6 @@
                     style="@style/input" />
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilPeso"
@@ -127,8 +119,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-
-
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilAltura"
                 android:layout_width="match_parent"
@@ -148,7 +138,6 @@
                     style="@style/input" />
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilPresionArterial"
@@ -170,7 +159,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tilComentario"
                 android:layout_width="match_parent"
@@ -188,6 +176,10 @@
                     style="@style/input" />
 
             </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
 
         </LinearLayout>
 
